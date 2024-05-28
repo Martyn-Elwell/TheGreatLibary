@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/Editor%20Tools/ItemCreator.uss?fileID=7433441132597879392&amp;guid=6d27bcadeae4dd24eb68b2e874b9a99b&amp;type=3#ItemCreator" />
+    <ui:Label tabindex="-1" text="Item Creator" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-font-style: bold; -unity-text-align: upper-center; font-size: 18px;" />
+    <ui:TextField picking-mode="Ignore" label="Item Name" name="NameField" />
+    <ui:TextField picking-mode="Ignore" label="Item Description" name="DescriptionField" />
+    <uie:ObjectField label="Prefab" name="PrefabField" type="UnityEngine.GameObject, UnityEngine.CoreModule" />
+    <uie:ObjectField label="Icon" type="UnityEngine.Sprite, UnityEngine.CoreModule" name="IconField" />
+    <uie:ColorField label="Icon Colour" value="#FFFFFFFF" name="ColourField" />
+    <ui:Toggle label="Contaband" name="ContrabandField" />
+    <ui:Button text="Create Item" parse-escape-sequences="true" display-tooltip-when-elided="true" name="CreateField" />
+</ui:UXML>
