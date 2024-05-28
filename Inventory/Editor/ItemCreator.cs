@@ -36,11 +36,7 @@ public class ItemCreator : EditorWindow
     {
         // Each editor window contains a root VisualElement object
         root = rootVisualElement;
-
-
-        // Instantiate UXML
-        VisualElement labelFromUXML = m_VisualTreeAsset.Instantiate();
-        root.Add(labelFromUXML);
+        m_VisualTreeAsset.CloneTree(root);
 
         SetupUI();
     }
